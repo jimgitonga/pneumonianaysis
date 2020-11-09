@@ -9,6 +9,8 @@ import torch
 
 from torchvision import datasets, transforms, models
 
+from resnet import resnet152
+
 from collections import OrderedDict
 from torch.autograd import Variable
 # import PIL
@@ -22,7 +24,7 @@ print(device)
 
 def load_checkpoint(filepath):
     checkpoint = torch.load(filepath)
-    model = models.resnet152(pretrained=True)
+    model = resnet152(pretrained=True)
     print("****************************")
     print(f"the model is{model} ")
 
