@@ -25,6 +25,7 @@ print(device)
 def load_checkpoint(filepath):
     checkpoint = torch.load(filepath)
     model = resnet152(pretrained=True)
+    model.eval()
     print("****************************")
     print(f"the model is{model} ")
 
