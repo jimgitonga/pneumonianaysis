@@ -28,7 +28,7 @@ def load_checkpoint(filepath):
 
     print("*****************************")
 
-    our input_size matches the in_features of pretrained model
+    # our input_size matches the in_features of pretrained model
     input_size = 2048
     output_size = 2
 
