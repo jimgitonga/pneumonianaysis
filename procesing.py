@@ -23,7 +23,7 @@ print(device)
 
 
 def load_checkpoint(filepath):
-    checkpoint = torch.load(filepath, encoding='ascii')
+    checkpoint = torch.load(filepath)
     model = resnet152(pretrained=True)
     model.eval()
     print("****************************")
