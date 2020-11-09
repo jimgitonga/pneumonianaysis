@@ -221,5 +221,5 @@ def resnet152(pretrained=False, **kwargs):
     """
     model = ResNet(Bottleneck, [3, 8, 36, 3], **kwargs)
     if pretrained:
-        model.load_state_dict(model_zoo.load_url("resnet152-b121ed2d.pth"))
+        model.load_state_dict(model_zoo.load_url("./resnet152-b121ed2d.pth"))
     return model

@@ -53,7 +53,7 @@ def load_checkpoint(filepath):
 
 # Get index to class mapping
 loaded_model, class_to_idx = load_checkpoint(
-    'pneumo_jim90.pth')
+    './pneumo_jim90.pth')
 idx_to_class = {v: k for k, v in class_to_idx.items()}
 print("classes are :", idx_to_class)
 
