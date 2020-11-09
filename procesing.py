@@ -23,12 +23,12 @@ print(device)
 def load_checkpoint(filepath):
     checkpoint = torch.load(filepath)
     model = models.resnet152(pretrained=True)
-    # print("****************************")
-    # print(f"the model is{model} ")
+    print("****************************")
+    print(f"the model is{model} ")
 
-    # print("*****************************")
+    print("*****************************")
 
-    # our input_size matches the in_features of pretrained model
+    our input_size matches the in_features of pretrained model
     input_size = 2048
     output_size = 2
 
